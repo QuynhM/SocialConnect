@@ -1,0 +1,411 @@
+*, *::before, *::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    text-decoration: none;
+    list-style: none;
+    border: none;    
+}
+:root{
+    --primary-color-hue: 252;  
+    --color-dark-light-theme: 15%;
+    --color-light-light-theme: 92%;
+    --color-white-light-theme: 100%;
+
+    --color-white: hsl(0, 0%, var(--color-white-light-theme));
+    --color-light: hsl(252, 30%, var(--color-light-light-theme));
+    --color-gray: hsl(252, 15%, 60%);
+    --color-primary: hsl(var(--primary-color-hue), 75%, 60%); 
+    --color-secondary: hsl(252, 100%, 90%);
+    --color-success: hsl(120, 95%, 60%);
+    --color-danger: hsl(0, 95%, 60%);
+    --color-dark: hsl(252, 30%, var(--color-dark-light-theme));
+    --color-black: hsl(252, 30%, 8%);
+
+
+    --border-radius: 2rem;
+    --card-border-radius: 1rem;
+
+    --btn-padding: .6rem 2rem;
+
+    --search-padding: .6rem 1rem;
+    --card-padding: 1rem;
+}
+
+
+/* 
+.app {
+    position: relative;
+  }
+
+.app_body {
+    display: flex;
+} */
+
+/* ..............Custom Style............. */
+/* .container{
+    width: 90%;
+    margin: 0 auto;
+}
+
+img{
+    display: block;
+    width: 100%;
+}
+
+.profile-picture{
+    width: 2.9rem;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.profile-picture:hover{
+    opacity: 0.75;
+}
+
+.btn{
+    padding: var(--btn-padding);
+    display: inline-block;
+    cursor: pointer;
+    border-radius: var(--border-radius);
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: 300ms ease all;
+    color: white ;
+}
+.btn:hover{
+    opacity: 0.75;
+}
+.btn-primary{
+    background: var(--color-primary);
+ 
+}
+
+.text-bold{
+    font-weight: 500;
+}
+.text-gry{
+    color: var(--color-gray);
+} */
+
+
+/* .................Start Main Section.................. */
+
+/* ............Start Main Left........... */
+button {
+    width: 100%;
+}
+
+.btn-lg{
+    padding: 1rem 0;
+    width: 100%;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+
+/* ............Start Notifaction Box........... */
+.notification-box{
+    width: 30rem;
+    left: 110%;
+    position: absolute;
+    top: 0;
+    background: var(--color-white);
+    border-radius: var(--card-border-radius);
+    padding: var(--card-padding);
+    box-shadow: var(--color-primary) 0 0 .4rem;
+    z-index: 8;
+    display: none; 
+}
+.notification-box.visible {
+    display: block;
+  }
+.notification-box::before{
+    content: '';
+    width: 1.2rem;
+    height: 1.2rem;
+    background: var(--color-white);
+    position: absolute;
+    left: -.6rem;
+    transform: rotate(45deg);
+}
+.notification-box>div{
+    display: flex;
+    gap: 1rem;
+    align-items: start;
+    margin-bottom: 1rem;
+}
+.notification-box .profile-picture{
+    width: 2.6rem;
+}
+.notification-box>div small{
+    display: block;
+}
+/* ............End Notifaction Box........... */
+
+
+
+/* .................Welcome page.................. */
+.mainContainer {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  
+  .titleContainer {
+    display: flex;
+    flex-direction: column;
+    font-size: 64px;
+    font-weight: bolder;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .resultContainer,
+  .historyItem {
+    flex-direction: row;
+    display: flex;
+    width: 400px;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .historyContainer {
+    flex-direction: column;
+    display: flex;
+    height: 200px;
+    align-items: center;
+    flex-grow: 5;
+    justify-content: flex-start;
+  }
+  
+  .buttonContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 260px;
+  }
+  
+  .inputContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+  }
+  
+  .inputContainer > .errorLabel {
+    color: red;
+    font-size: 12px;
+  }
+  
+  .inputBox {
+    height: 48px;
+    width: 400px;
+    font-size: large;
+    border-radius: 8px;
+    border: 1px solid grey;
+    padding-left: 8px;
+  }
+
+  .inputButton{
+    border: none;
+    background: var(--color-primary);
+    color: white;
+    margin: 8px;
+    font-size: 24px;
+    border-radius: 8px;
+    cursor: pointer;
+    padding: var(--btn-padding);
+    display: inline-block;
+    border-radius: var(--border-radius);
+    font-weight: 500;
+    transition: 300ms ease all;
+  }
+
+  .inputButton:hover{
+    opacity: 0.75;
+  }
+
+  .welcome {
+    display: flex;
+    flex-direction: column;
+    font-size: 30px;
+    font-weight: bolder;
+    align-items: center;
+    justify-content: center;
+  }
+
+
+.logoWelcome h3{
+    font-size: 4rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    user-select: none;  
+    color: var(--color-dark); 
+    margin-top: 30px; 
+    text-align: center;
+
+}
+.logoWelcome span{
+    color: var(--color-primary);
+    position: relative;
+}
+
+
+.logoWelcome h3 span::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 7px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--color-primary); /* Adjust the color as needed */
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .logoWelcome h3 span:hover::after {
+    visibility: visible;
+    transform: scaleX(1);
+  }
+
+  /* Small Screen */
+  @media (max-width: 768px) {
+    /* .main-container {
+      flex-direction: row; /* Stack items vertically */
+    /* } */
+  
+    .firend-rquest {
+      display: none; /* Hide the friend request bar */
+    }
+
+    .main-container {
+        position: relative;
+        top: 6rem;   
+        display: grid;
+        grid-template-columns: 18vw auto; /* Adjust as needed */
+        position: relative;    
+      }
+    
+    /* ............Start Main Left........... */
+    .main-left{
+        position: sticky;
+        height: max-content;
+        top: 5.4rem;
+    }
+  }
+
+  
+  
+/* ====================Start Media Queryes======================= */
+/* .........MAX WIDTH(1200PX)..... */
+@media (max-width:1200px) {
+    .container{
+        width: 96%;
+    }   
+    .main-container{
+        grid-template-columns:6rem auto 26vw;
+    } 
+    .main-left{
+        width: 6rem;
+        z-index: 5;          
+    }   
+    .main-container .main-left .profile{
+        display: none;
+    }
+    aside h3{
+        display: none;
+    }   
+    aside .btn{
+        display: none;
+    }   
+    
+    /* .........MAX WIDTH(991px)..... */ 
+    @media (max-width:1100px) {
+        nav .serch-bar{
+            /* display: none; */
+            /* order: 1;  */
+        } 
+        .main-container{
+            /* grid-template-columns: auto 0; */
+            display: flex; /* Change to flexbox layout */
+            flex-direction: column; /* Arrange items in a column */
+        }
+        .main-right{
+            display: none;
+        }  
+        .main-left{        
+            right: 0;  
+            top: 16%;  
+            position: fixed;  
+                         
+        }   
+        .search-bar {
+            order: 0; /* Move the search bar up */
+        }  
+          
+                
+    }
+}
+/* =====================End Media Queryes======================= */
+
+/* .............Start Profile Popup............. */
+.popup{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    justify-content: center;
+    z-index: 9;
+    background: #000000ba; 
+    display: none;  
+    padding-top: 4rem;  
+}
+.popup>div{
+    display: flex;
+}
+.popup-box{
+    width: fit-content;   
+    height: max-content;
+    background: var(--color-white);
+    padding: 3rem; 
+    border-radius: var(--card-border-radius);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;  
+    box-shadow: var(--color-primary) 0 0 .3rem;
+}
+.profile-popup-box{
+    width: 400px;
+}
+.profile-popup-box>div{
+    height: 10rem;
+    width: 10rem;
+    border-radius: 50%;
+    overflow: hidden;   
+    margin-top: 2rem; 
+}
+#profile-upload{
+    display: none;
+}
+.profile-popup-box h1{
+    line-height: 1.8;
+}
+.popup .close{
+    font-size: 1.6rem;
+    color: var(--color-gray);
+    margin-left: .5rem;  
+    margin-top: -.5rem; 
+}
+
+/*.............. End Profile popup.............. */
+  
