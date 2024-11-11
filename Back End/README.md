@@ -270,4 +270,4 @@ The Facebook Clone project aims to replicate core functionalities of the popular
  */
 ```
 
-The frontend for this project is stored here: https://github.com/QuynhM/SocialConnect-FE
+The frontend for this project is stored here: https://github.com/QuynhM/SocialConnect/tree/main/Front%20End
