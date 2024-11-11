@@ -1,9 +1,5 @@
 # Social Connect
 
-A clone of the popular social media platform, Facebook.
-
-## Demo
-
 ## Features
 - **Authentication**: Users can register and login to their accounts securely.
 - **User Profiles**: Users can view their profiles and update information such as avatar, cover image, bio, etc.
