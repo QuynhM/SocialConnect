@@ -1,0 +1,9 @@
+.friend {
+    background: var(--color-card);
+    padding: 20px;
+    border-radius:.5rem ;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+}
