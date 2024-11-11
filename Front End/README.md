@@ -19,4 +19,4 @@ A clone of the popular social media platform, Facebook.
 - JavaScript
 - React
 
-The backend for this project is stored here: https://github.com/QuynhM/SocialConnect-BE
+The backend for this project is stored here: https://github.com/QuynhM/SocialConnect/tree/main/Back%20End
